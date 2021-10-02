@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pemesanan</title>
+</head>
+<body>
+    <h2>Data Supplier</h2>
+
+    <thead>
+        <table border="1">
+        <tr>
+            <th>ID_PESAN</th>
+            <th>ID_SUP</th>
+            <th>ID_USER</th>
+            <th>TGL_PESAN</th>
+            <th>STATUS_PESAN</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach($pemesanan as $item)
+            <tr>
+                <td>{{ $item->ID_PESAN }}</td>
+                <td>{{ $item->ID_SUP }}</td>
+                <td>{{ $item->ID_USER }}</td>
+                <td>{{ $item->TGL_PESAN }}</td>
+                <td>{{ $item->STATUS_PESAN }}</td>
+        @endforeach
+    </tbody>
+</table>
+</body>
+</html>

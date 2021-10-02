@@ -2,7 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\SupplierController;
+use App\Http\Controllers\PemesananController;
+use App\Http\Controllers\PenerimaanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,11 +24,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/barang', [BarangController::class, 'index']);
-
 Route::get('/home', [HomeController::class, 'index']);
 
+Route::get('/pengguna', [PenggunaController::class, 'index']);
+
 Route::get('/supplier', [SupplierController::class, 'index']);
+
+Route::get('/barang', [BarangController::class, 'index']);
 
 Route::get('/pemesanan', [PemesananController::class, 'index']);
 
