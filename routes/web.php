@@ -20,3 +20,11 @@ Route::get('/', function () {
 });
 
 Route::get('/barang', [BarangController::class, 'index']);
+
+Route::get('/home', [HomeController::class, 'index']);
+
+Route::get('/supplier', [SupplierController::class, 'index']);
+
+Route::get('/pemesanan', [PemesananController::class, 'index']);
+
+Route::get('/penerimaan', [PenerimaanController::class, 'index']);
