@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>BOUTIQUE - Tables</title>
+    <title>BUTIK - Tables</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -36,9 +36,9 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                    <i class="fas fa-shopping-cart"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">BOUTIQUE <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">BUTIK <sup></sup></div>
             </a>
 
             <!-- Divider -->
@@ -56,24 +56,23 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Interface
+                Data
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Tabel Master</span>
+                    <i class="fa fa-database"></i>
+                    <span>Data Master</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Data Master</h6>
                         <a class="collapse-item" href="/pengguna">Pengguna</a>
-                        <a class="collapse-item" href="/supplier">Supplier</a>
-                        <a class="collapse-item" href="/barang">Barang</a>
-                        <a class="collapse-item" href="/pemesanan">Pemesanan</a>
-                        <a class="collapse-item" href="/penerimaan">Penerimaan</a>
+                        <a class="collapse-item" href="/jenisbarang">Jenis Barang</a>
+                        <a class="collapse-item" href="/ukuran">Ukuran</a>
+                        <a class="collapse-item" href="/warna">Warna</a>
                     </div>
                 </div>
             </li>
@@ -367,24 +366,81 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-                    <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-                        For more information about DataTables, please visit the <a target="_blank"
-                            href="https://datatables.net">official DataTables documentation</a>.</p>
-
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">HOME</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                </table>
+                    <h1 class="h3 mb-2 text-gray-800">Selamat Datang di Butik NiRa!</h1>
+                    <h6 class="m-0 font-weight-bold text-primary"></h6>
+                    <br>
+                    <div class="row">
+                        
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-3 mb-3">
+                        <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            <font size = "3"><b>DATA PENGGUNA</b></font></div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fa fa-archive text-gray-300"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                    <div class="col-xl-3 col-md-3 mb-3">
+                        <div class="card border-left-primary shadow h-100 py-z">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            <font size = "3"><b>DATA JENIS BARANG</b></font></div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-archive text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-3 mb-3">
+                        <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            <font size = "3"><b>DATA UKURAN</b></font></div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fa fa-archive text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3 mb-3">
+                        <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            <font size = "3"><b>DATA WARNA</b></font></div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fa fa-archive text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    
                 </div>
                 <!-- /.container-fluid -->
 
@@ -395,7 +451,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; Annisa Raihan</span>
                     </div>
                 </div>
             </footer>
