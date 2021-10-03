@@ -28,10 +28,8 @@ Route::get('/home', [HomeController::class, 'index']);
 
 Route::get('/pengguna', [PenggunaController::class, 'index']);
 
-Route::get('/supplier', [SupplierController::class, 'index']);
+Route::get('/jenisbarang', [Jenis_BarangController::class, 'index']);
 
-Route::get('/barang', [BarangController::class, 'index']);
+Route::get('/ukuran', [UkuranController::class, 'index']);
 
-Route::get('/pemesanan', [PemesananController::class, 'index']);
-
-Route::get('/penerimaan', [PenerimaanController::class, 'index']);
+Route::get('/warna', [WarnaController::class, 'index']);
