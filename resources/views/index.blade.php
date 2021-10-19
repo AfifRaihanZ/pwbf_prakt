@@ -44,11 +44,11 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Welcome To Our Boutique!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                <div class="masthead-heading text-uppercase">Summer Collection</div>
                 <a class="btn btn-primary btn-xl text-uppercase" href="#about">Tell Me More</a>
             </div>
         </header>
-        <!-- Services-->
+        {{-- <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
@@ -183,7 +183,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
+        
         <!-- About-->
         <section class="page-section" id="about">
             <div class="container">
@@ -264,7 +265,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
                             <h4>Annisa Aristawati</h4>
                             <p class="text-muted"> </p>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
@@ -274,7 +275,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
                             <h4>Afif Raihan Zahra</h4>
                             <p class="text-muted"> </p>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
