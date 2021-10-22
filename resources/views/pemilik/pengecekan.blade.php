@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="/">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Home</span></a>
             </li>
@@ -58,21 +58,21 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="/pengecekan">
+                <a class="nav-link" href="/pemilik/pengecekan">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Pengecekan</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="/pemesanan">
+                <a class="nav-link" href="/pemilik/pemesanan">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Pemesanan</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="/pemilikpembayaran">
+                <a class="nav-link" href="/pemilik/pembayaran">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Pembayaran</span></a>
             </li>
@@ -292,9 +292,7 @@
                                 </a>
                             </div>
                         </li>
-
                     </ul>
-
                 </nav>
                 <!-- End of Topbar -->
 
@@ -303,58 +301,6 @@
                     <div class="col-6">
                         <h1>Data Barang</h1>
                     </div>
-
-                        {{-- <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#exampleModal">
-                            Tambah Data Barang
-                        </button>
-                        <br>
-                        
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Input Data Barang</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="/jenisbarang/create" method="POST">
-                                        <div class="form-group">
-                                          <label for="exampleInputIDPesan">ID Trima</label>
-                                          <input name="id_pesan" type="text" class="form-control" id="exampleInputIDPesan" placeholder="Masukkan ID Trima">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputIDUser">ID Supplier</label>
-                                            <input name="id_sup" type="text" class="form-control" id="exampleInputIDSup" placeholder="Masukkan ID Supplier">
-                                          </div>
-                                          <div class="form-group">
-                                            <label for="exampleInputIDUser">ID User</label>
-                                            <input name="id_user" type="text" class="form-control" id="exampleInputIDUser" placeholder="Masukkan ID User">
-                                          </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputTanggalPesan">Tanggal Trima</label>
-                                            <input name="tanggal_pesan" type="text" class="form-control" id="exampleInputIDUser" placeholder="Masukkan Tanggal Trima">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputTanggalPesan">Total Harga</label>
-                                            <input name="total_harga" type="text" class="form-control" id="exampleInputIDUser" placeholder="Masukkan Total Harga">
-                                        </div>
-                                        <div class="form-group">
-                                          <label for="exampleInputNamaUser">Status Trima</label>
-                                          <input name="nama_user" type="text" class="form-control" id="exampleInputNamaUser" placeholder="Masukkan Status Trima">
-                                        </div>
-                                </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                    </form>
-                                </div>
-                            </div>
-                            </div>
-                        </div> --}}
 
                     <div class="col-6">
                     </div>

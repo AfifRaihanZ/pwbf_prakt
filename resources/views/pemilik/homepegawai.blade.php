@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="/">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Home</span></a>
             </li>
@@ -58,21 +58,21 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="/pengecekan">
+                <a class="nav-link" href="/pemilik/pengecekan">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Pengecekan</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="/pemesanan">
+                <a class="nav-link" href="/pemilik/pemesanan">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Pemesanan</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="/pemilikpembayaran">
+                <a class="nav-link" href="/pemilik/pembayaran">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Pembayaran</span></a>
             </li>
