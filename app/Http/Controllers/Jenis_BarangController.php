@@ -10,6 +10,6 @@ class Jenis_BarangController extends Controller
     public function index()
     {
         $jenis_barang = Jenis_Barang::all();
-        return view ('jenis_barang', ['jenis_barang'=>$jenis_barang]);
+        return view ('master.jenisbarang', ['jenis_barang'=>$jenis_barang]);
     }
 }

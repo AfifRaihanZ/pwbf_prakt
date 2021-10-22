@@ -5,8 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Warna extends Model
+class Penerimaan extends Model
 {
- protected $table = 'warna';
- protected $fillable = ['id_warna','warna'];
+ protected $table = 'penerimaan';
 }

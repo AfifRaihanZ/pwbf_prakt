@@ -10,6 +10,6 @@ class UkuranController extends Controller
     public function index()
     {
         $ukuran = Ukuran::all();
-        return view ('ukuran', ['ukuran'=>$ukuran]);
+        return view ('master.ukuran', ['ukuran'=>$ukuran]);
     }
 }

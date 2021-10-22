@@ -10,6 +10,6 @@ class PenggunaController extends Controller
     public function index()
     {
         $pengguna = Pengguna::all();
-        return view ('pengguna', ['pengguna'=>$pengguna]);
+        return view ('master.pengguna', ['user'=>$pengguna]);
     }
 }
