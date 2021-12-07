@@ -15,8 +15,7 @@ class WarnaController extends Controller
 
     public  function insert()
     {
-        $warna = Warna::all();
-        return view('insertwarna',['$warna'=>$warna]);
+        return view('insertwarna');
     }
 
     public function create(Request $request)
@@ -24,10 +23,15 @@ class WarnaController extends Controller
         $data = $request->input();
         $warna = new Warna;
         
-        $warna->id_warna    = $data['id_warna'];
         $warna->warna       = $data['warna'];
         $warna->save();
 
-        return redirect('warna');
+        return redirect('warna')->with('sukses','Data berhasil diinput');
+    }
+
+    public function destroy($id){
+        $item = Warna::find($id);
+        $item->delete();
+        return redirect('warna')->with('sukses','Data berhasil dihapus');
     }
 }

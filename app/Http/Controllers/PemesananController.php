@@ -10,6 +10,31 @@ class PemesananController extends Controller
     public function index()
     {
         $pemesanan = Pemesanan::all();
-        return view ('pegawai.pemesananpegawai', ['pemesanan'=>$pemesanan]);
+        return view ('transaksi.pemesanan', ['pemesanan'=>$pemesanan]);
+    }
+
+    public  function insert()
+    {
+        return view('insertpemesanan');
+    }
+
+    public function create(Request $request)
+    {
+        $data = $request->input();
+        $pemesanan = new Pemesanan;
+        
+        $pemesanan->id_sup          = $data['id_sup'];
+        $pemesanan->id_user         = $data['id_user'];
+        $pemesanan->tgl_pesan       = $data['tgl_pesan'];
+        $pemesanan->status_pesan    = $data['status_pesan'];
+        $pemesanan->save();
+
+        return redirect('pemesanan')->with('sukses','Data berhasil diinput');;
+    }
+
+    public function destroy($id){
+        $item = Pemesanan::find($id);
+        $item->delete();
+        return redirect('pemesanan')->with('sukses','Data berhasil dihapus');
     }
 }
