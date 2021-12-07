@@ -5,24 +5,24 @@
     <div class="card card-info card-outline">
         <div class="card-header">
             <div class="card-tools">
-                <h1 class="mt-4">Input Warna Baru</h1>
+                <h1 class="mt-4">Input Jenis Barang Baru</h1>
             </div>
         
 
         <div class="card-body">
-            <form action="{{ url('/create_warna') }}" method="post">
+            <form action="{{ url('/create_jenis_barang') }}" method="post">
                 <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
-                <div class="form-group">
                     <div class="form-group">
-                        <label>Warna</label>
-                        <input name="warna" type="text" class="form-control" id="" placeholder="Masukkan Warna">
+                        <div class="form-group">
+                            <label>Jenis Barang</label>
+                            <input name="jenis_barang" type="text" class="form-control" id="" placeholder="Masukkan Jenis Barang">
+                        </div>
                     </div>
-                </div>
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
         </div>
+        </div>
     </div>
-</div>
 </div>
 @endsection

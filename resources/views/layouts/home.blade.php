@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>BOUTIQUE NIRA</title>
+    <title>BUTIK</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,7 +35,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-shopping-cart"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">BOUTIQUE NIRA</div>
+                <div class="sidebar-brand-text mx-3">BUTIK NIRA</div>
             </a>
 
             <!-- Divider -->
@@ -46,6 +46,26 @@
                 <a class="nav-link" href="/">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Home</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="/pegawai">
+                    <i class="fas fa-fw fa-laptop"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="/role">
+                    <i class="fas fa-fw fa-user-friends"></i>
+                    <span>Role</span></a>
             </li>
 
             <!-- Divider -->
@@ -66,24 +86,49 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Tabel Data Master :</h6>
-                        <a class="collapse-item" href="/user">User</a>
+                        <a class="collapse-item" href="/pengguna">User</a>
+                        <a class="collapse-item" href="/supplier">Supplier</a>
+                        <a class="collapse-item" href="/kota">Kota</a>
                         <a class="collapse-item" href="/barang">Barang</a>
                         <a class="collapse-item" href="/jenisbarang">Jenis Barang</a>
                         <a class="collapse-item" href="/ukuran">Ukuran</a>
-                        <a class="collapse-item" href="/warna">Warna</a>
+                        <a class="collapse-item" href="/warna">Warna</a>                        
+                        {{-- <a class="collapse-item" href="/role">Role</a> --}}
+                        {{-- <a class="collapse-item" href="/historystock">History Stock</a>
+                        <a class="collapse-item" href="/detailbarang">Detail Barang</a>
+                        <a class="collapse-item" href="/detailpemesanan">Detail Pemesanan</a>
+                        <a class="collapse-item" href="/detailpenerimaan">Detail Penerimaan</a> --}}
                     </div>
                 </div>
             </li>
 
-            <!-- Divider -->
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-chart-bar"></i>
+                    <span>Data Transaksi</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Data Transaksi :</h6>
+                        <a class="collapse-item" href="/pemesanan">Pemesanan</a>
+                        <a class="collapse-item" href="/penerimaan">Penerimaan</a>
+                        <a class="collapse-item" href="/pembayaran">Pembayaran</a>
+                    </div>
+                </div>
+            </li>
+
+            {{-- <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Menu
+                Addons
             </div>
 
-            {{-- <!-- Nav Item - Pages Collapse Menu -->
+            <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
@@ -102,27 +147,20 @@
                         <a class="collapse-item" href="blank.html">Blank Page</a>
                     </div>
                 </div>
-            </li> --}}
+            </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="/pendataan">
+                <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Pendataan</span></a>
+                    <span>Charts</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="/pemesanan">
+                <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Pemesanan</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="/penerimaan">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Penerimaan</span></a>
+                    <span>Tables</span></a>
             </li>
 
             <!-- Divider -->
@@ -131,13 +169,6 @@
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-            {{-- <!-- Sidebar Message -->
-            <div class="sidebar-card d-none d-lg-flex">
-                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
-                <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
             </div> --}}
 
         </ul>
@@ -347,144 +378,67 @@
                                 </a>
                             </div>
                         </li>
-
                     </ul>
-
                 </nav>
                 <!-- End of Topbar -->
+                @yield('container')
+            
+                <!-- End of Main Content -->
+                </div>
 
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-                    <div class="col-6">
-                        <h1>Data Jenis Barang</h1>
-                    </div>
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#exampleModal">
-                            Tambah Data Jenis Barang
-                        </button>
-                        <br>
-                        
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Input Data Jenis Barang</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="/jenisbarang/create" method="POST">
-                                        <div class="form-group">
-                                          <label for="exampleInputIDUser">ID Jenis Barang</label>
-                                          <input name="id_user" type="text" class="form-control" id="exampleInputIDUser" placeholder="Masukkan ID Jenis Barang">
-                                        </div>
-                                        <div class="form-group">
-                                          <label for="exampleInputNamaUser">Jenis Barang</label>
-                                          <input name="nama_user" type="text" class="form-control" id="exampleInputNamaUser" placeholder="Masukkan Jenis Barang">
-                                        </div>
-                                </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                    </form>
-                                </div>
-                            </div>
-                            </div>
+                <!-- Footer -->
+                <footer class="sticky-footer bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; Annisa Raihan</span>
                         </div>
-
-                    <div class="col-6">
                     </div>
-
-                    <!-- DATABASE -->                    
-                    <br>
-                    <table class="table table-hover">
-                        <thead>
-                        <tr>
-                            <th scope="col">ID Jenis Barang</th>
-                            <th scope="col">Jenis Barang</th>
-                            <th scope="col">Aksi</th>
-                        </tr>
-                        </thead>
-
-                        @foreach ($jenis_barang as $item)
-                            <tbody>
-                            <tr>
-                                <td>{{ $item->ID_JB }}</td>
-                                <td>{{ $item->JENIS_BARANG }}</td>
-                                <td><a href="#" class="btn btn-warning btn-sm">Edit</a></td>
-                                <td><a href="#">Delete</a></td>
-                            </tr>
-                        @endforeach
-                        </tbody>
-                    </table>
-
+                </footer>
+                <!-- End of Footer -->
                 </div>
-                <!-- /.container-fluid -->
 
-            </div>
-            <!-- End of Main Content -->
+                <!-- End of Page Wrapper -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Annisa Raihan</span>
+                <!-- Scroll to Top Button-->
+                <a class="scroll-to-top rounded" href="#page-top">
+                    <i class="fas fa-angle-up"></i>
+                        </a>
+
+                <!-- Logout Modal-->
+                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                                                <a class="btn btn-primary" href="/">Logout</a>
+                                        </div>
+                        </div>
                     </div>
                 </div>
-            </footer>
-            <!-- End of Footer -->
 
-        </div>
-        <!-- End of Content Wrapper -->
+                <!-- Bootstrap core JavaScript-->
+                <script src="vendor/jquery/jquery.min.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    </div>
-    <!-- End of Page Wrapper -->
+                <!-- Core plugin JavaScript-->
+                <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
+                <!-- Custom scripts for all pages-->
+                <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+                <!-- Page level plugins -->
+                <script src="vendor/chart.js/Chart.min.js"></script>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <!-- Page level custom scripts -->
+                <script src="js/demo/chart-area-demo.js"></script>
+                <script src="js/demo/chart-pie-demo.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-
-</body>
-
+        </body>
 </html>
