@@ -23,7 +23,7 @@
                         </div>
                         <div class="form-group">
                             <label>Telp User</label>
-                            <input name="telp_user" type="text" class="form-control" id="" placeholder="Masukkan Telp User">
+                            <input name="telp_user" type="telepon" class="form-control" id="" placeholder="Masukkan Telp User">
                         </div>
                         <div class="form-group">
                             <label>Username</label>
@@ -31,14 +31,14 @@
                         </div>
                         <div class="form-group">
                             <label>Password</label>
-                            <input name="password" type="text" class="form-control" id="" placeholder="Masukkan Password">
+                            <input name="password" type="password" class="form-control" id="" placeholder="Masukkan Password">
                         </div>
                     </div>
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
         </div>
-        </div>
     </div>
+</div>
 </div>
 @endsection
