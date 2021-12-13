@@ -15,7 +15,7 @@ class JenisBarangController extends Controller
 
     public  function insert()
     {
-        return view('insertjenisbarang');
+        return view('insert.jenisbarang');
     }
 
     public function create(Request $request)
@@ -29,18 +29,30 @@ class JenisBarangController extends Controller
         return redirect('jenisbarang')->with('sukses','Data berhasil diinput');
     }
 
+    public function edit($id){
+        $jenisbarang = JenisBarang::find($id);
+        return view('edit.jenisbarang', ['jenisbarang' => $jenisbarang]);
+    }
+
+    public function update(Request $request, $id){
+        $this->validate($request, [
+            'jenis_barang'      => 'required'
+        ]);
+        $jenisbarang = JenisBarang::find($id);
+        $jenisbarang= new JenisBarang;
+        $jenisbarang->jenis_barang    = $request->input('jenis_barang');
+        $jenisbarang->save();
+
+        return redirect('jenisbarang');
+    }
+
     public function destroy($id){
         $item = JenisBarang::find($id);
         $item->delete();
         return redirect('jenisbarang');
     }
 
-    public function edit($id) 
-    {
-        $jenis_barang = JenisBarang::findorfail($id);
-        return view('editjenisbarang')->with('sukses','Data berhasil dihapus');
-    }
-
+    //menghitung baris dinamis untuk dashboard
     public function count_item(){
         $this->ci->load->model('item_m');
         return $this->ci->item_m->get();

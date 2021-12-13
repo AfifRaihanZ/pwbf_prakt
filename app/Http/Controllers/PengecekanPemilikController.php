@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Barang;
 
-class PengecekanController extends Controller
+class PengecekanPemilikController extends Controller
 {
     public function index()
     {
         $barang = Barang::all();
-        return view ('pemilik.pengecekan', ['barang'=>$barang]);
+        return view ('pemilik.pengecekanpemilik', ['barang'=>$barang]);
     }
 }

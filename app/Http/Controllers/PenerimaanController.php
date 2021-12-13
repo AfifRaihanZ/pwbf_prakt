@@ -33,6 +33,33 @@ class PenerimaanController extends Controller
         return redirect('penerimaan')->with('sukses','Data berhasil diinput');
     }
 
+    public function edit($id){
+        $penerimaan = Penerimaan::find($id);
+        return view('edit.penerimaan', ['penerimaan' => $penerimaan]);
+    }
+
+    public function update(Request $request, $id){
+        $this->validate($request, [
+            'id_sup'        => 'required',
+            'id_user'       => 'required',
+            'tgl_trima'     => 'required',
+            'total_harga'   => 'required',
+            'status_trima'  => 'required'
+        ]);
+
+        $penerimaan = Penerimaan::find($id);
+
+        $penerimaan = new Penerimaan;
+        $penerimaan->id_sup         = $request->input('id_sup');
+        $penerimaan->id_user        = $request->input('id_user');
+        $penerimaan->tgl_trima      = $request->input('tgl_trima');
+        $penerimaan->total_harga    = $request->input('total_harga');
+        $penerimaan->status_trima   = $request->input('status_trima');
+        $penerimaan->ve();
+
+        return redirect('penerimaan');
+    }
+
     public function destroy($id){
         $item = Penerimaan::find($id);
         $item->delete();

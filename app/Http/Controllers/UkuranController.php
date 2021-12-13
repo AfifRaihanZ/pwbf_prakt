@@ -29,6 +29,25 @@ class UkuranController extends Controller
         return redirect('ukuran')->with('sukses','Data berhasil diinput');
     }
 
+    public function edit($id){
+        $ukuran = Ukuran::find($id);
+        return view('edit.ukuran', ['ukuran' => $ukuran]);
+    }
+
+    public function update(Request $request, $id){
+        $this->validate($request, [
+            'ukuran'    => 'required'
+        ]);
+
+        $ukuran = Ukuran::find($id);
+
+        $ukuran = new Ukuran;
+        $ukuran->ukuran = $request->input('ukuran');
+        $ukuran->save();
+
+        return redirect('ukuran');
+    }
+
     public function destroy($id){
         $item = Ukuran::find($id);
         $item->delete();

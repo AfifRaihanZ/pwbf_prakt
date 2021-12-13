@@ -23,11 +23,32 @@ class RoleController extends Controller
         $data = $request->input();
         $role = new Role;
 
-        $role->jid_user     = $data['id_user'];
+        $role->id_user     = $data['id_user'];
         $role->jenis_role   = $data['jenis_role'];
         $role->save();
 
         return redirect('role')->with('sukses','Data berhasil diinput');
+    }
+
+    public function edit($id){
+        $role = Role::find($id);
+        return view('edit.role', ['role' => $role]);
+    }
+
+    public function update(Request $request, $id){
+        $this->validate($request, [
+            'id_user'     => 'required',
+            'jenis_role'   => 'required'
+        ]);
+
+        $role = Role::find($id);
+
+        $role = new Role;
+        $role->id_user      = $request->input('id_user');
+        $role->jenis_role   = $request->input('jenis_role');
+        $role->save();
+
+        return redirect('role');
     }
 
     public function destroy($id){
