@@ -7,7 +7,7 @@
         <div class="alert alert-success" role="alert">
             Data berhasil diinput!
         </div>
-    @endif
+        @endif
         <div class="col-6">
             <h1>Data User</h1>
         </div>
@@ -42,14 +42,17 @@
                     <td>{{ $item->telp_user }}</td>
                     <td>{{ $item->username }}</td>
                     <td>{{ $item->password }}</td>
-                    <form action="{{ url('/edit_pengguna',$item->id) }}" method="POST">
-                        <td><button type="submit" class="btn btn-info btn-sm")>Edit</button></td>
+                    <form action="{{ url('/edit_user',$item->id) }}">
+                        <td><button type="submit" class="btn btn-info btn-sm")>
+                            <i class="fas fa-fw fa-edit"></i>Edit</button></td>
                     </form>
 
-                    <form action="{{ url('/destroy_pengguna',$item->id) }}" method="POST">
+                    <form action="{{ url('/destroy_user',$item->id) }}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <td><button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin menghapus?')")>Delete</button></td>
+                        <td><button type="submit" class="btn btn-danger btn-sm" 
+                            onclick="return confirm('Apakah anda yakin menghapus?')")>
+                            <i class="fas fa-fw fa-trash"></i>Delete</button></td>
                     </form>
                 </tr>
             @endforeach

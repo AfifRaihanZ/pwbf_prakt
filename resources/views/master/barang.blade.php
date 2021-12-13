@@ -42,14 +42,17 @@
                 <td>{{ $item->stock_bar }}</td>
                 <td>{{ $item->harga_beli_bar }}</td>
                 <td>{{ $item->harga_jual_bar }}</td>
-                <form action="{{ url('/edit_barang',$item->id) }}" method="POST">
-                    <td><button type="submit" class="btn btn-info btn-sm")>Edit</button></td>
+                <form action="{{ url('/edit_barang',$item->id) }}">
+                    <td><button type="submit" class="btn btn-info btn-sm")>
+                        <i class="fas fa-fw fa-edit"></i>Edit</button></td>
                 </form>
 
                 <form action="{{ url('/destroy_barang',$item->id) }}" method="POST">
                     @csrf
                     @method('DELETE')
-                    <td><button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin menghapus?')")>Delete</button></td>
+                    <td><button type="submit" class="btn btn-danger btn-sm" 
+                        onclick="return confirm('Apakah anda yakin menghapus?')")>
+                        <i class="fas fa-fw fa-trash"></i>Delete</button></td>
                 </form>
             </tr>
         @endforeach

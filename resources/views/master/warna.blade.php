@@ -46,7 +46,7 @@
                 <tr>
                     <td>{{ $item->id }}</td>
                     <td>{{ $item->warna }}</td>
-                    <form action="{{ url('/edit_warna',$item->id) }}" method="POST">
+                    <form action="{{ url('/edit_warna',$item->id) }}" method="GET">
                         <td><button type="submit" class="btn btn-info btn-sm")>Edit</button></td>
                     </form>
 
