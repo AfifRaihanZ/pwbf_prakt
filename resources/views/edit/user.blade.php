@@ -10,19 +10,19 @@
         
 
         <div class="card-body">
-            <form action="{{ url('/update_user/{id}') }}" method="POST">
+            <form action="{{ url('/updateuser/{id}') }}" method="POST">
                 <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                     <div class="form-group">
                         <div class="form-group">
-                            <label>Nama User</label>
+                            <label>Name</label>
                             <input name="nama_user" type="text" class="form-control" value="{{ $user->nama_user }}">
                         </div>
                         <div class="form-group">
-                            <label>Alamat User</label>
+                            <label>Address</label>
                             <input name="alamat_user" type="text" class="form-control" value="{{ $user->alamat_user }}">
                         </div>
                         <div class="form-group">
-                            <label>Telp User</label>
+                            <label>Phone</label>
                             <input name="telp_user" type="text" class="form-control" value="{{ $user->telp_user }}">
                         </div>
                         <div class="form-group">
@@ -36,9 +36,10 @@
                     </div>
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    @endsection
+</div>
+@endsection

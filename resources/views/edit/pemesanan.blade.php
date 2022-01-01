@@ -5,44 +5,36 @@
     <div class="card card-info card-outline">
         <div class="card-header">
             <div class="card-tools">
-                <h1 class="mt-4">Edit Pemesanan</h1>
+                <h1 class="mt-4">Edit Booking</h1>
             </div>
         
 
         <div class="card-body">
-            <form action="{{ url('/update_pemesanan/{id}')}}" method="post">
+            <form action="{{ url('/updatepemesanan/{id}')}}" method="post">
                 <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                 <div class="form-group">
                     <div class="form-group">
-                        <label>ID Supplier</label>
+                        <label>Supplier ID</label>
                         <input name="id_sup" type="number" class="form-control" value="{{ $pemesanan->id_sup }}">
                     </div>
                     <div class="form-group">
-                        <label>ID User</label>
+                        <label>User ID</label>
                         <input name="id_user" type="number" class="form-control" value="{{ $pemesanan->id_user }}">
                     </div>
                     <div class="form-group">
-                        <label>Tanggal Pemesanan</label>
+                        <label>Order Date</label>
                         <input name="tgl_pesan" type="date" class="form-control" value="{{ $pemesanan->tgl_pesan }}">
                     </div>
                     <div class="form-group">
-                        <label>Status Pemesanan</label>
+                        <label>Order Status</label>
                         <input name="status_pesan" type="text" class="form-control" value="{{ $pemesanan->status_pesan }}">
-                        {{-- <select name="status_trima" id="" class="form-control">
-                            <option value="status_trima">- Pilih Status Pembayaran -</option>
-                            <option value="belumbayar">Belum Bayar</option>
-                            <option value="dikemas">Dikemas</option>
-                            <option value="dikirim">Dikirim</option>
-                            <option value="selesai">Selesai</option>
-                            <option value="dibatalkan">Dibatalkan</option>   
-                        </select> --}}
                     </div>
-            </div>
+                </div>
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
 @endsection
